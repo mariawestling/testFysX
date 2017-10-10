@@ -2,7 +2,9 @@
 <meta charset="utf-8">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <style type="text/css">
+
 body {
 	background: #FAFAFA;
 	width: 100%; 
@@ -47,11 +49,18 @@ body {
 		SETTINGS
 	</div>
 	<div id="setOptions">
-		<form>
+		<form action="alert()">
 			Number of drinks per hour
 			<input type="text" id="inputBox">
 		</form>
-		<button class="btn btn-primary"> SAVE </button> 
+		<button class="btn btn-primary" onclick="sweetA()"> SAVE </button> 
 	</div>
 	
 </body>
+
+<script>
+	function sweetA() {
+		console.log("alert function")
+		swal("SAVED", "Your interval has been set", "success");
+	}
+</script>
