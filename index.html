@@ -63,13 +63,15 @@ h3 {
 			<h3> Number of drinks per hour</h3>
 			<input type="number" id="inputBox">
 		</form>
-		<button class="btn btn-primary" text-align="center" onclick="sweetA()"> <h3> SAVE </h3> </button> 
+		<button class="btn btn-primary" id="butt" text-align="center" onclick="sweetA('butt')"> <h3> SAVE </h3> </button> 
 	</div>
 	
 </body>
 
 <script>
-	function sweetA() {
+	function sweetA(butt) {
+		var buttON = document.getElementById(butt);
+		buttON.style.backgroundColor = "#00695C"
 		console.log("alert function")
 		swal("SAVED", "Your interval has been set", "success");
 	}
