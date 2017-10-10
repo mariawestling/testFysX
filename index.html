@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <style type="text/css">
 
@@ -19,41 +21,47 @@ body {
 	text-align: center;
 	color: white;
 	margin: 0px;
-	font-size: 52px;
+	/*font-size: 52px;*/
 	letter-spacing: 4px;
 }
 
 #setOptions {
-	font-size: 40px;
+	/*font-size: 40px;*/
 	margin-left: 10%;
 }
 
 #inputBox {
 	border-color: #616161;
 	border-radius: 5px;
-	font-size: 24px;
+	/*font-size: 24px;*/
 }
 
 .btn {
-	margin: 10px;
-	font-size: 50px;
+	/*margin: 10px;
+	/*font-size: 50px;*/
 	letter-spacing: 2px;
 	background-color: #009688;
 	padding-left: 5%;
 	padding-right: 5%;
-	margin:  auto;
+	margin-top: 5%;
+
+}
+
+h3 {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 </style>
 <body>
 	<div id="header">
-		SETTINGS
+		<h2> SETTINGS </h2>
 	</div>
 	<div id="setOptions">
 		<form action="alert()">
-			Number of drinks per hour
+			<h3> Number of drinks per hour     </h3>
 			<input type="text" id="inputBox">
 		</form>
-		<button class="btn btn-primary" onclick="sweetA()"> SAVE </button> 
+		<button class="btn btn-primary" onclick="sweetA()"> <h3> SAVE </h3> </button> 
 	</div>
 	
 </body>
